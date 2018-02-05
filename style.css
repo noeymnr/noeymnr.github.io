@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Itim');
+      .bg{
+        background-image:  url(https://image.freepik.com/free-photo/blue-sky-with-clouds_1232-936.jpg);
+        background-size: cover;
+        height: 95vh;
+        background-position: 0 0;
+        background-repeat: repeat-y;
+        animation: bgmove 5s linear infinite;
+      }
+
+
+
+      #logo, #board, #p1, #p2, #p3,
+      #p4, #p5, #p6, #p7, #p8 {
+        position: relative;
+        left: 300px;
+      }
+
+
+      #doraemon{
+        position: relative;
+        left: -50%;
+        top: -10%;
+        animation: charectermove 3s linear infinite;
+      }
+
+      #nobi{
+        position: relative;
+        left: 15%;
+        animation: charectermove 4s ease-in-out infinite;
+      }
+
+      #question {
+      position: absolute;
+      top: 20%;
+      left: 45%;
+      transform: translate(-40%, -10%);
+      font-size: 30px;
+      overflow: auto;
+      font-family: 'Itim', cursive;
+}
+
+      button {
+        background-color: #505DBD; 
+        color: white; 
+        border: 4px solid #E1A406;
+        font-size: 40px;
+        position: relative;
+        border-radius: 25px;
+        text-align: center;
+        width: 600px;
+        height: 50px;
+        margin-left: 50px;
+        font-family: 'Itim', cursive;
+       }
+
+        #again{
+        position: absolute;
+        color: pink;
+        top: 900px;
+        left: 5000px;
+       }
+
+
+       #c1, #c2, #c3, #c4{
+        
+        font-size: 20px;
+        
+       }
+
+       #text-num{
+          font-size: 40px;
+          position: absolute;
+          top: 10px;
+          left: 16px;
+          font-family: 'Itim', cursive;
+       }
+
+        #text-time{
+          font-size: 40px;
+          position: absolute;
+          top: 8px;
+          right: 25px;
+          font-family: 'Itim', cursive;
+       }
+
+      
+
+       button:hover {
+        background-color: white;
+        color: green ;
+}
+
+
+
+
+      
+      @keyframes charectermove{
+        0%   {transform: translateY(0);}
+        50%   {transform: translateY(-45%);}
+        100% {transform: translateY(0);}
+  
+}
+
+      @keyframes bgmove{
+        from{
+          background-position: 0 0; 
+        }
+        to{
+          background-position: 0 100%; 
+        }
+      }
+
+      @keyframes move{
+        from{
+          height:  
+        }
+        to{
+          background-position: 0 100%; 
+        }
+      }
+
+  

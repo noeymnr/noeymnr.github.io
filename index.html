@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Doraemon game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+  </head>
+
+  <body>
+
+  
+
+    <div class="bg">
+      <img src="https://www.img.in.th/images/1bef1bb0970d5209fbd30ea6dbb7e0f2.png" id="logo">
+
+
+      <img src="https://www.img.in.th/images/3a3200c130917b1621f71b362eb5e659.png"  id="board">
+
+      <img src="https://www.img.in.th/images/e5c8508f5f27a8d73699742b53854323.png"  id="p1">
+
+      <img src="https://www.img.in.th/images/c965cf49a94af5356404796cdb05ecf7.png"  id="p2">
+
+      <img src="https://www.img.in.th/images/62a79ebb2d52445e1469c83a6c130ee6.png"  id="p3">
+      <img src="https://www.img.in.th/images/da0a123ef320021d620eebf01ac92171.png"  id="p4">
+      <img src="https://www.img.in.th/images/0ca93ccf94aa14215700729225454a22.png"  id="p5">
+      <img src="https://www.img.in.th/images/6277d48f84a54f8223751fa749eb21c2.png"  id="p6">
+      <img src="https://www.img.in.th/images/af231eca3033e5aad0a19bf5f98d84a9.png" id="p7">
+      <img src="https://www.img.in.th/images/8d594f79379d40dd56ad12dbf8fef17a.png" id="p8">
+
+      <img src="https://www.img.in.th/images/5c9b162edef8a22166c4cbcca127f680.png" id="doraemon">
+
+      <img src="https://www.img.in.th/images/981698bf6842e503d6ca73709749551f.png" id="nobi">
+
+       <button id="button10" onclick="start_question(10)">คำถาม 10 ข้อ</button>
+       <button id="button20" onclick="start_question(20)"">คำถาม 20 ข้อ</button>
+
+        <div id="question"></div>
+
+       <table>
+          <tr>
+            <th><button id="c1" onclick="check_result(1)"></button></th>
+            <th><button id="c2" onclick="check_result(2)"></button></th> 
+          </tr>
+          <tr>
+            <td><button id="c3" onclick="check_result(3)"></button></td>
+            <td><button id="c4" onclick="check_result(4)"></button></td>
+          </tr>
+          <tr>
+          </table>
+
+          <div id="text-num"></div>
+          <div id="text-time"></div>
+          <center><button id="again" onclick="play_again()">เล่นใหม่อีกครั้ง</button></center>
+
+    </div>
+
+    <script src="jquery-3.3.1.min.js">
+      charset="utf-8"
+    </script>
+
+    <script src="script.js"></script>
+    <audio autoplay loop >
+      <source src="DoraemonSong.mp3" type="audio/mpeg">
+    </audio>
+
+  </body>
+</html>
