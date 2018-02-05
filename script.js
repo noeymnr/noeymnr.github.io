@@ -33,8 +33,6 @@ var positions = [];
       
         if (counter < 0) {
         sum_time += 10;
-        console.log("time"+sum_time);
-        console.log("count in click"+counter);
         clearInterval(time);
         check_result("99");
       }
@@ -119,9 +117,6 @@ var positions = [];
         if (x != "99"){
           sum_time += (10 - counter);
         }
-        
-        console.log("count in click"+counter);
-        console.log("time in click"+sum_time);
         clearInterval(time);
         document.getElementById("text-time").textContent = "เวลา: "+ 10;
         count_time();
@@ -140,7 +135,7 @@ var positions = [];
       }
 
       function finish(){
-        clearInterval(time);
+        
         hideall();
          $("#c1").hide();
          $("#c2").hide();
@@ -152,7 +147,10 @@ var positions = [];
         $("#question").show();
         document.getElementById("question").textContent = "คุณตอบถูกทั้งหมด : "+ score +
         " ข้อ" + "  เวลาที่ใช้ : " + sum_time + " วินาที";
-        $("#again").show();
+         $("#again").show();
+         clearInterval(time);
+
+        
 
       }
 
